@@ -1,11 +1,56 @@
 @use '../variables' as *;
 
+
 .main-nav {
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  border-bottom: 1.5px solid $light-gray;
+}
+.main-nav button {
+  border-radius: 0.4em;
 }
 
-.left-nav > ul,
-.right-nav > ul {
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav > ul, .right-nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  height: 100%
+}
+
+#sections-sidebar-btn:hover, #search-modal-btn:hover, .right-nav ul li:last-child button:hover, .right-nav ul button {
+  background-color: $darkest-blue;
+  border-radius: 100;
+}
+
+.right-nav ul button {
+  background-color: $light-blue;
+  color: white;
+  padding: 10px;
+}
+
+#search-modal-btn, #sections-sidebar-btn {
+  background-color: transparent;
+  padding: 10px;
+}
+ 
+.right-nav ul li:last-child button {
+  color: black;
+  background-color: $light-gray;
+}
+
+.right-nav {
   
 }
 
